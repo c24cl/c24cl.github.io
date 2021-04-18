@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+
+		#cameroncoffee {
+			width: 100px
+			height: 100px
+			background-image: url(coffee.jpeg);
+			display: inline-block;
+		}
+
+	</style>
+
+</head>
+<body>
+
+
+	<div id="cameroncoffee"></div>
+
+	<script type="text/javascript">
+		
+		function makeCoffee () {
+			var coffee = document.createElement('div');
+
+			document.body.appendChild(coffee);
+
+			coffee.id = "cameroncoffee";
+
+		}
+
+		document.addEvenListener("click", makeCoffee)
+	</script>
+
+</body>
+</html>

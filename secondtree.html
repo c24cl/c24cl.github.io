@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+
+		.freds{
+			width:50px;
+			height:50px;
+			background-size: contain;
+			background-image: url(mango2.jpeg);
+			background-repeat: no-repeat;
+			display: inline-block;
+			position: absolute; 
+
+	}	
+
+	</style>
+</head>
+<body>
+
+
+<script type="text/javascript">
+
+
+	document.addEventListener("click",
+
+		function makeMango (event) {
+			console.log(event);
+		var mango = document.createElement('div');
+		document.body.appendChild(mango);
+		mango.classList.add('freds');
+
+	mango.style.left = event.clientX -25 + 'px';
+	mango.style.top = event.clientY -25 + 'px';
+
+}
+
+		)
+	// you can also look for "keypress",etc. this runs the function 
+
+	</script>
+
+</body>
+
+</html>

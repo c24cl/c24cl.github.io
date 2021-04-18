@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- saved from url=(0073)file:///Users/student/Desktop/repositories/c24cl.github.io/something.html -->
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<title>the garden</title>
+
+	<style type="text/css">
+		
+		body{
+			background-image: url(treebackground2.jpeg);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+		}
+
+		.header{
+			color: white;
+		}
+
+		.tree{
+			background-image: url(tree1.jpg);
+			width: 31%;
+			height: 300px;
+			position: relative;
+			display: inline-block;
+			background-size: contain;
+			background-repeat: no-repeat;
+			margin-top:20%;
+			background-position: center;
+		}
+
+	</style>
+
+</head>
+<body>
+
+<div class="header"> 
+	<center>
+	<H1> 
+		welcome to the garden
+		<p>
+		click on a tree to get fruit!
+		</p>
+	</H1>
+	</center>
+</div>
+
+<div class="tree" id="tree1"></div>
+<div class="tree" id="tree2"></div>
+<div class="tree" id="tree3"></div>
+
+
+	<script type="text/javascript">	
+
+		var appletree = document.getElementById("tree1");
+			appletree.addEventListener("click", function (){
+
+				appletree.style.backgroundImage = "url(apple.png)"
+				appletree.style.height =  "200px";
+
+			})
+
+		var peartree = document.getElementById("tree2");
+			peartree.addEventListener("click", function (){
+
+				peartree.style.backgroundImage = "url(pears.png)"
+				peartree.style.height =  "200px";
+			})
+
+
+		var mangotree = document.getElementById("tree3");
+			mangotree.addEventListener("click", function (){
+
+				mangotree.style.backgroundImage = "url(mango3.png)"
+				mangotree
+				mangotree.style.height =  "200px";
+			})
+
+
+	</script>
+
+
+</body></html>

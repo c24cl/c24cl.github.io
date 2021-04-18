@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>BIKING!</title>
+
+    <style type="text/css">
+  
+    body {
+        background-image: url(mountains.jpg);
+        background-size: cover;
+        background-position: relative;
+        background-repeat: no-repeat;
+        }
+
+    .clouds {
+        position: relative;
+        display: inline-block;
+        width: 27%;
+        height: 150px;
+        background-size: contain;
+        background-image: url(clouds.png);
+        background-repeat: no-repeat;
+        animation-name: floating;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+    }
+
+    .bikers{
+        background-color: ;
+        background-image:url(bikinggif.gif);
+        background-size:contain;
+        position: relative;
+        margin-top: 15%;
+        display: inline-block;
+        background-repeat: no-repeat;
+        width: 200px;
+        height: 150px;
+        animation-name:run;
+        animation-duration:5s;
+        animation-iteration-count: infinite
+
+    }
+
+    @keyframes floating {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        25% {
+            transform: rotate(-45deg);
+        }
+
+        50% {
+            transform: rotate(0deg);
+        }
+
+        75% {
+            transform: rotate(45deg);
+        }
+
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+
+
+    @keyframes run {
+            0% {
+               left:0px;
+            }
+
+            25% {
+                left:250px;
+            }
+
+            50% {
+                left:550px;
+            }
+
+            75% {
+              left:750px;
+            }
+
+            100% {
+                left:0px;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+
+<h1>
+    <center>
+    <div class="clouds" id="cloud1"></div>
+    <div class="clouds" id="cloud2"></div>
+    <div class="clouds" id="cloud3"></div>
+    </center>
+</h1>
+
+<h2>
+    <div class="bikers" id="biker1"></div>
+    <div class="bikers" id="biker2"></div>
+</h2>
+</body>
+
+</html>

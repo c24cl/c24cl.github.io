@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		
+ body{
+ 	background-color: floralwhite;
+ }
+
+		.bee{
+			width: 100%;
+			height: 356px;
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+
+
+	</style>
+
+
+
+</head>
+<body>
+
+	<h1>
+		<center>
+		<p>click to generate bees!</p>
+	</center>
+	</h1>
+
+<script type="text/javascript">
+	
+	function makeBee () {
+	var bee = document.createElement('div');
+
+	document.body.appendChild(bee);
+
+	bee.style.width = "490px";
+	bee.style.height = "400px";
+	bee.style.backgroundImage= "url(bee.gif)";
+	// bee.style.backgroundRepeat="no-repeat";
+	bee.style.backgroundDisplay= "inline-block";
+
+	}
+
+document.addEventListener("click", makeBee);
+
+
+
+</script>
+
+</body>
+</html>
