@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		
+		.cakes{
+			background-image:url(cake.webp);
+		}
+
+	</style>
+	
+</head>
+<body>
+
+	<script type="text/javascript">
+
+		function makeCakes (){
+		var cakes = document.createElement('div');
+		document.body.appendChild(cakes);
+		cakes.classList.add('cakes'); 
+
+		cakes.style.width="400px";
+		cakes.style.height="400px";
+		cakes.style.backgroundImage="url(cake.webp)";
+	}
+
+document.addEventListener("click", makeCakes);
+
+	</script>
+
+
+
+
+
+
+</body>
+</html>

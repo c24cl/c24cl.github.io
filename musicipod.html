@@ -5,27 +5,57 @@
 
 	<style type="text/css">
 		
+		body{
+			background-image: url(ipod.png);
+			background-repeat: no-repeat;
+			background-position: center bottom;
+			background-attachment: fixed;
+
+		}
+
+		#header{
+			font-size: 25px;
+		}
+
+
 		#albums{
-			width:300px;
-			height:300px;
-		
+			width:200px;
+			height:200px;
+			/*z-index:1;*/
 			background-size:contain;
 			background-repeat: no-repeat;
 		}
+
+		/*#ipod{
+			background-image: url(ipod.png);
+			background-repeat: no-repeat;
+			width: 800px;
+			height: 700px;
+			top: -230px;
+			z-index: 3;
+			position: relative;
+			background-size: contain;
+
+		}
+*/
+
 	</style>
 </head>
 <body>
 
 	<center>
-
-		<h1>What music should you listen to?
+		<h1 id="header">What music should you listen to?
 			<p>click to see an album/song!
 			</p>
 		</h1>
 		
-		<div id="albums">
-			
+		<div id="albums">	
 		</div>
+
+		<h2>
+			<div id="ipod">
+			</div>
+		</h2>
 	</center>
 
 	<script type="text/javascript">
