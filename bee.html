@@ -1,25 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>bees</title>
 
-	<style type="text/css">
+
+<style type="text/css">
 		
- body{
- 	background-color: floralwhite;
- }
+ 		body{
+ 			background-image:url(beebackground.jpeg);
+ 		}
 
 		.bee{
-			width: 100%;
-			height: 356px;
+			width: 300px;
+			height: 200px;
 			background-size: cover;
 			background-repeat: no-repeat;
+			background-image: url(bee.gif);
+			position: absolute;
+		}
+
+		#arrow{
+			border-radius: 50%;
+			width: 50px;
+			height: 50px;
+			top: -75px;
+			left: 25px;
+			position: relative;
+			background-color: rgb(71, 89, 107);
+			font-size: 42px;
+			}
+		
+		a:link{
+			text-decoration: none;
+		}
+
+		a{
+			color: floralwhite;
 		}
 
 
-	</style>
 
-
+</style>
 
 </head>
 <body>
@@ -30,22 +51,30 @@
 	</center>
 	</h1>
 
+
+	<div class="dot" id="arrow">
+		<a href="index.html"> 
+		<center> < 
+		</center>
+		</a>
+	</div>
+
 <script type="text/javascript">
 	
-	function makeBee () {
+	document.addEventListener("click",
+
+	function makeBee (event) {
 	var bee = document.createElement('div');
 
 	document.body.appendChild(bee);
+	bee.classList.add('bee');
+	console.log(bee);
+	bee.style.left = event.clientX  -150 + 'px';
+	bee.style.top = event.clientY  -65 + 'px';
 
-	bee.style.width = "490px";
-	bee.style.height = "400px";
-	bee.style.backgroundImage= "url(bee.gif)";
-	// bee.style.backgroundRepeat="no-repeat";
-	bee.style.backgroundDisplay= "inline-block";
+	})
 
-	}
-
-document.addEventListener("click", makeBee);
+// document.addEventListener("click", makeBee);
 
 
 

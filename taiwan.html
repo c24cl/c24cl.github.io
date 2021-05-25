@@ -4,22 +4,43 @@
 
 	<title>taiwan</title>
 
+	<link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
+
 <style type="text/css">
 	
+	body{
+			/*background-image: url(parchment2.jpeg);*/
+			background-color: black;
+			background-position: center;
+			background-size: cover;
+
+			}
+
+		#header{
+			width: 60%;
+			background-color: black;
+			color: orange;
+			font-family: 'Odibee Sans', cursive;
+			position:relative;
+		}
+
 
 		#taiwan{
 			height: 800px;
 			width: 1000px;
 			background-image: url(taiwanmarket.jpeg);
 			background-size: cover;
+
 		}
 
 		.dot{
 			border-radius: 50%;
-			width: 20px;
-			height: 20px;
+			width: 25px;
+			height: 25px;
 			background-color: black;
 			position: relative;
+			color: orange;
+
 		}
 
 		#one{
@@ -54,6 +75,22 @@
 			position: relative;
 		}
 
+		#arrow{
+			border-radius: 50%;
+			width: 50px;
+			height: 50px;
+			top: -930px;
+			left: 25px;
+			position: relative;
+			background-color: orange;
+			font-size: 42px;
+			}
+		
+		a:link{
+			text-decoration: none;
+		}
+
+
 
 </style>
 
@@ -61,19 +98,24 @@
 <body>
 
 	<center>
-	<h1>welcome to the night market, click on a vendor!</h1>
+	<h1 id="header">welcome to the night market, click on a vendor!</h1>
 	<div id="taiwan"></div>
 	</center>
 
 
-	<div class="dot" id="one"><a href="vendor1.jpeg">!!</a></div>
+	<div class="dot" id="one"><a href="vendor1.jpeg">1</a></div>
 <!-- vendor 1p2 exists -->
-	<div class="dot" id="two"><a href="vendor2.jpeg">!!</a></div>
+	<div class="dot" id="two"><a href="vendor2.jpeg">2</a></div>
 <!-- vendor 2p2 exists -->
-	<div class="dot" id="three"><a href="vendor3.jpeg">!!</a></div>
+	<div class="dot" id="three"><a href="vendor3.jpeg">3</a></div>
 <!-- vendor 3p2 exists -->
-	<div class="dot" id="four"><a href="vendor4p2.jpeg">!!</a></div>
+	<div class="dot" id="four"><a href="vendor4p2.jpeg">4</a></div>
 <!-- vendor 4 image exists -->
+	<div class="dot" id="arrow">
+		<a href="index.html"> 
+		<center> < 
+		</center>
+		</a></div>
 
 
 <script type="text/javascript">
