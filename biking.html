@@ -6,85 +6,78 @@
     <title>BIKING!</title>
 
     <style type="text/css">
-  
-    body {
-        background-image: url(mountains.jpg);
+    
+    #arrow{
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            top: 5px;
+            left: 25px;
+            position: relative;
+            background-color: rgb(15, 15, 87);
+            font-size: 42px;
+            z-index: 1;
+            }
+        
+        a:link{
+            text-decoration: none;
+        }
+
+        a{
+            color: floralwhite;
+        }
+
+
+
+    #background{
+        height: 1200px;
+        width: 99%;
         background-size: cover;
-        background-position: relative;
+        background-image: url(townbackground.png);
+        top: -250px;
+        position: relative;
         background-repeat: no-repeat;
         }
 
-    .clouds {
-        position: relative;
-        display: inline-block;
-        width: 27%;
-        height: 150px;
-        background-size: contain;
-        background-image: url(clouds.png);
-        background-repeat: no-repeat;
-        animation-name: floating;
-        animation-duration: 4s;
-        animation-iteration-count: infinite;
-    }
-
     .bikers{
-        background-color: ;
+        border-radius: 75%;
+        background-color: floralwhite;
         background-image:url(bikinggif.gif);
         background-size:contain;
+        background-position: center;
         position: relative;
-        margin-top: 15%;
         display: inline-block;
         background-repeat: no-repeat;
-        width: 200px;
-        height: 150px;
+        width: 225px;
+        height: 175px;
+        top: -475px;
+
         animation-name:run;
         animation-duration:5s;
         animation-iteration-count: infinite
 
     }
 
-    @keyframes floating {
-        0% {
-            transform: rotate(0deg);
-        }
-
-        25% {
-            transform: rotate(-45deg);
-        }
-
-        50% {
-            transform: rotate(0deg);
-        }
-
-        75% {
-            transform: rotate(45deg);
-        }
-
-        100% {
-            transform: rotate(0deg);
-        }
-    }
-
 
     @keyframes run {
             0% {
-               left:0px;
+               left:-2%;
             }
 
             25% {
-                left:250px;
+                left:20%;
             }
 
             50% {
-                left:550px;
+                left:60%;
             }
 
             75% {
-              left:750px;
+              left:80%;
             }
 
             100% {
-                left:0px;
+                left:100%;
             }
         }
 
@@ -93,12 +86,14 @@
 </head>
 <body>
 
-<h1>
-    <center>
-    <div class="clouds" id="cloud1"></div>
-    <div class="clouds" id="cloud2"></div>
-    </center>
-</h1>
+    <div class="dot" id="arrow">
+        <a href="index.html"> 
+        <center> < 
+        </center>
+        </a>
+    </div>
+
+    <div id="background"></div>
 
 <h2>
     <div class="bikers" id="biker1"></div>
